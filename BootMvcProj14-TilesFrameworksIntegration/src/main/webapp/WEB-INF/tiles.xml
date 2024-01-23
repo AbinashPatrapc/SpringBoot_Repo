@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tiles-definitions xmlns="http://tiles.apache.org/dtds/tiles-config_2_0.dtd" >
+	<definition name="baseDef"
+		template="/WEB-INF/pages/layout.jsp">
+		<put-attribute name="title" value="" type="string" />
+		<put-attribute name="header"
+			value="/WEB-INF/pages/header.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/pages/footer.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/pages/menu.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+<definition name="homePageDef" extends="baseDef">
+<put-attribute name="title" value="HOME PAGE"/>
+<put-attribute name="body" value="/WEB-INF/pages/home.jsp"/>
+</definition>
+
+
+<definition name="facultyPageDef" extends="baseDef">
+<put-attribute name="title" value="FACULTY PAGE"/>
+<put-attribute name="body" value="/WEB-INF/pages/faculty.jsp"/>
+</definition>
+
+
+<definition name="coursePageDef" extends="baseDef">
+<put-attribute name="title" value="COURSE PAGE"/>
+<put-attribute name="body" value="/WEB-INF/pages/course.jsp"/>
+</definition>
+
+
+<definition name="aboutUsPageDef" extends="baseDef">
+<put-attribute name="title" value="ABOUT US"/>
+<put-attribute name="body" value="/WEB-INF/pages/aboutUs.jsp"/>
+</definition>
+
+</tiles-definitions>
